@@ -5,14 +5,39 @@ const Users = () => {
         {
             name : 'shibly',
             id: 1,
-            places: 3
-        }
+            places: 3,
+            image:'src/assets/react.svg'
+        },
+          {
+            name : 'shibly',
+            id: 1,
+            places: 3,
+            image:'src/assets/react.svg'
+        },
+        {
+          name : 'shibly',
+          id: 1,
+          places: 3,
+          image:'src/assets/react.svg'
+      },
+        {
+          name : 'shibly',
+          id: 1,
+          places: 3,
+          image:'src/assets/react.svg'
+      },{
+        name : 'shibly',
+        id: 1,
+        places: 3,
+        image:'src/assets/react.svg'
+    }
+
     ]
 
   return (
-    <>
+    
     <UserList items = {USERS} />
-    </>
+  
   )
 }
 

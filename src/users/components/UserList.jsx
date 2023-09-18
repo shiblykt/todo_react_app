@@ -3,20 +3,26 @@ import './UserList.css'
 import UserItem from './UserItem'
 
 const UserList = props => {
-  if ( props === 0 ) {
+  if ( props.items.length === 0 ) {
     return (<h1>No users available</h1>)
   }
 
-  return (<ul>
+  return (
+  <div className='grid-container'>
+
     {props.items.map( user => 
     <UserItem 
+    image={user.image}
     key={user.id} 
     id={user.id} 
     name = {user.name}
     placeCount = {user.places}
     />
     )}
-  </ul>)
+
+  </div>
+  )
+  
 }
 
 export default UserList
