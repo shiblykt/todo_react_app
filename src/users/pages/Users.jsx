@@ -10,24 +10,24 @@ const Users = () => {
         },
           {
             name : 'shibly',
-            id: 1,
+            id: 2,
             places: 3,
             image:'src/assets/react.svg'
         },
         {
           name : 'shibly',
-          id: 1,
+          id: 3,
           places: 3,
           image:'src/assets/react.svg'
       },
         {
           name : 'shibly',
-          id: 1,
+          id: 4,
           places: 3,
           image:'src/assets/react.svg'
       },{
         name : 'shibly',
-        id: 1,
+        id: 5,
         places: 3,
         image:'src/assets/react.svg'
     }
