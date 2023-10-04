@@ -7,7 +7,14 @@ import NavLinks from './NavLink';
 
 const MainNavigation = (props) => {
   return (
+    <React.Fragment>
     <MainHeader>
+      
+       <SideDrawer>
+        <nav className="main-navigation__drawer-nav">
+          <NavLinks />
+        </nav>
+      </SideDrawer>
       <button className="main-navigation__menu-btn">
         <span></span>
         <span></span>
@@ -16,11 +23,13 @@ const MainNavigation = (props) => {
       <h1 className="main-navigation__title">
         <Link to="/">YourPlaces</Link>
       </h1>
-      <nav>
+      <nav className="main-navigation__header-nav">
         <NavLinks />
       </nav>
     </MainHeader>
+    </React.Fragment>
   );
 };
 
 export default MainNavigation;
+import SideDrawer from './SideDrawer';
