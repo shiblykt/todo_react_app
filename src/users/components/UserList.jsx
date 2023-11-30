@@ -4,7 +4,12 @@ import UserItem from './UserItem'
 
 const UserList = props => {
   if ( props.items.length === 0 ) {
-    return (<h1>No users available</h1>)
+    return (
+    <div>
+      <h1>No users available</h1>
+    </div>
+    
+    )
   }
 
   return (
